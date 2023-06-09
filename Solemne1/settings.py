@@ -26,7 +26,7 @@ SECRET_KEY = 'd61it3sdv9z6+tsi41n7_9u1b8zmpemek5n!wxrz1^8o*j0(*r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*', 'chillecodes.azurewebsites.net']
 
 MESSAGE_STORAGE = "django.contrib.messages.storage.cookie.CookieStorage"
 
@@ -93,11 +93,11 @@ WSGI_APPLICATION = 'Solemne1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'HOST': 'localhost',
+        'HOST': 'chillecodes-server.postgres.database.azure.com',
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'totoxcata',
-        'USER': 'postgres',
-        'PASSWORD': 'felipe11',
+        'NAME': 'chillecodes-database',
+        'USER': 'jrwxaajsmx',
+        'PASSWORD': 'MET1066GJQ5EWCLU$',
         'DATABASE_PORT': '5432',
     }
 }
